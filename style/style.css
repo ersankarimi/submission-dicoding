@@ -1,0 +1,1117 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+    font-size: 16px;
+}
+
+/* Global Styles */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #EDEEF7;
+}
+
+/* ================
+Start My Style
+============== */
+
+/* Style Container */
+.container {
+    width: 100%;
+}
+
+
+
+/* Style Header */
+
+/* .column-flex {
+    display: flex;
+    flex-direction: column;
+} */
+
+#header {
+    background-color: #D6D3F4;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.logo-brand img {
+    padding: 0.5em 0 0.5em 2em;
+    margin-left: 4em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #D6D3F4;
+    z-index: 9998;
+}
+
+nav .my-link {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-right: 4em;
+}
+
+nav .my-link li {
+    list-style-type: none;
+    /* background: #000; */
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+nav .my-link li a {
+    padding: 0.5em;
+    /* background-color: aqua; */
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+nav .my-link li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgba(0, 73, 175, .6);
+    height: 1px;
+}
+
+nav .my-link li a:hover::after {
+    width: 100%;
+    transition: all .5s;
+}
+
+nav .my-link li a:hover {
+    border-radius: 15px;
+    background-color: rgba(237, 238, 247, .3);
+}
+
+/* bagian page */
+.page {
+    display: flex;
+    max-width: initial;
+    padding: 6em 1em 0 1em;
+}
+
+.page-1 {
+    order: 1;
+}
+
+.page-1 h1 {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-1 p {
+    color: rgba(0, 0, 0, .5);
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+}
+
+.page-2 img {
+    max-width: 450px;
+    max-height: 479.6px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: #EDEEF7;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: #000;
+    width: fit-content;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, .3);
+
+}
+
+.btn:hover a {
+    color: #EDEEF7;
+}
+
+.waves img {
+    width: 100%;
+}
+
+.waves.relative img {
+    margin-bottom: -4px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+/* Bagian Layanan */
+article {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article .judul-artikel {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+aside .judul-artikel {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+section.container-flex {
+    display: flex;
+    padding: 1em;
+}
+
+section .thumbnail img {
+    width: 250px;
+    height: auto;
+}
+
+section .thumbnail {
+    text-align: center;
+    padding: 1em;
+    margin-right: -5.5em;
+    flex: 1;
+}
+
+section .deskripsi {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em;
+    align-items: center;
+    flex: 2;
+}
+
+section .deskripsi h4 {
+    flex: 1;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+section .deskripsi ol {
+    flex: 2;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+
+/* Bagian Galeri */
+article#galeri {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6D3F4;
+}
+
+.flex-galeri {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-galeri ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2em;
+}
+
+.flex-galeri ul li {
+    text-align: center;
+    list-style: none;
+    padding: 1em;
+    /* position: relative; */
+}
+
+.flex-galeri ul li a {
+    cursor: pointer
+}
+
+.galeri-img {
+    width: 400px;
+    height: 400px;
+}
+
+.item-galeri {
+    flex-basis: 50%;
+}
+
+/* #galeri {
+    position: relative;
+}
+
+#galeri .waves.relative {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+
+/* Lightbox */
+.lightbox {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .3s;
+    opacity: 0;
+}
+
+.lightbox:target {
+    display: block;
+    z-index: 9999;
+    /* padding: 70px; */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    opacity: 1;
+}
+
+.img-galeri {
+    width: 500px;
+}
+
+.btn-galeri {
+    position: absolute;
+    padding: 3px;
+    color: rgba(0, 0, 0.8);
+    background-color: rgba(237, 238, 247, .8);
+    padding: 0.5em;
+    font-size: 1rem;
+    margin-left: 10px;
+    bottom: 570px;
+    cursor: pointer;
+}
+
+.btn-galeri:hover {
+    background-color: #EDEEF7;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.next:hover,
+.prev:hover {
+    transform: scale(1.05);
+}
+
+
+
+.lightbox.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Lightbox */
+
+/* Overlay */
+li.item-galeri {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    background-color: rgba(237, 238, 247, .0);
+    transition: .3s;
+}
+
+.overlay img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 75px;
+    height: auto;
+    opacity: 0;
+}
+
+.overlay:hover {
+    background-color: rgba(237, 238, 247, .4);
+}
+
+.overlay:hover img {
+    opacity: 1;
+}
+
+/* End Overlay */
+/* End Bagian Galeri */
+
+
+/* Bagian Kontak */
+
+#kontak {
+    background-color: #EDEEF7;
+}
+
+section .kontak-link span {
+    display: block;
+}
+
+.container.kontak section {
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin: 2em 0;
+    border-radius: 15px;
+    background: #EDEEF7;
+    box-shadow: 5px 5px 32px #bebebe,
+        -5px -5px 32px #ffffff;
+}
+
+
+.container.kontak section .img-area {
+    margin-top: 1em;
+}
+
+.container.kontak section .header-kontak {
+    margin-top: 1em;
+}
+
+.container.kontak section .kontak-link {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.container.kontak section .header-kontak h5 {
+    font-size: 1.125rem;
+}
+
+.container.kontak section .kontak-link span a {
+    font-size: 0.875rem;
+}
+
+/* End Bagian Kontak */
+
+/* Start Bagian Biodata */
+#biodata {
+    background-color: #D6D3F4;
+}
+
+.container.biodata {
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.biodata-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 470px;
+    min-width: 280px;
+    background: #EDEEF7;
+    padding: 4em;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.data-diri {
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+    text-align: start;
+}
+
+.data-diri h6 {
+    font-size: 1.75rem;
+}
+
+.data-diri p {
+    font-size: 1.25rem;
+    text-indent: 1em;
+}
+
+.circle-biodata {
+    position: absolute;
+}
+
+.left-top {
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    margin-left: -50px;
+    transition: 1s ease-out;
+}
+
+.circle-biodata.right-bottom {
+    bottom: 0;
+    right: 0;
+    margin-bottom: -50px;
+    margin-right: -50px;
+    transition: 1s ease-in;
+}
+
+.biodata-card:hover .left-top {
+    left: 95%;
+}
+
+.biodata-card:hover .right-bottom {
+    right: 98%;
+}
+
+.biodata-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* @keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
+/* End Bagian Biodata */
+
+/* Footer */
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 1em;
+    background-color: #EDEEF7;
+    text-align: center;
+}
+
+/* End Footer */
+
+
+/* Media Query */
+
+/* PHONE */
+@media screen and (max-width: 576px) {
+    nav .menu-toggle {
+        position: absolute;
+        right: 1.5em;
+        top: 1.5rem;
+        transition: all 0.5s;
+    }
+
+    .btn-galeri {
+
+        padding: 3px;
+        color: rgba(0, 0, 0.8);
+        background-color: rgba(237, 238, 247, .8);
+        padding: 0.5em;
+        font-size: 0.75rem;
+        right: 45%;
+        bottom: 30%;
+        position: fixed;
+        cursor: pointer;
+    }
+
+    /* Bagian Kontak */
+    .container.kontak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    /*End  Bagian Kontak */
+
+    .container.biodata {
+        padding: 1em;
+    }
+
+    .biodata-card {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 470px;
+        min-width: 280px;
+        background: #fff;
+        padding: 2em;
+        text-align: center;
+        margin: auto;
+        border-radius: 15px;
+    }
+}
+
+
+/* PHONE */
+@media screen and (max-width: 767px) {
+
+    /* Bagian Header */
+    .logo-brand img {
+        margin-left: -1em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .my-link {
+        width: 100%;
+        background-color: #D6D3F4;
+        display: block;
+        position: absolute;
+        top: 5.5em;
+        left: -1000px;
+        font-size: 0.75rem;
+    }
+
+    nav .my-link.active {
+        left: 0;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        right: 1em;
+        top: 1.5rem;
+        transition: all 0.5s;
+    }
+
+    .menu-toggle:hover {
+        transform: scale(1.2);
+    }
+
+    .menu-toggle.active {
+        transform: rotate(160deg) scale(1.2);
+
+    }
+
+    .page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-1 {
+        text-align: start;
+        margin: 1em 0;
+    }
+
+    .page-1 h1 {
+        font-size: 1.5rem;
+        margin: 0.25em 0;
+    }
+
+    .page-1 p {
+        font-size: 0.75rem;
+        margin: 0 0 1em 0;
+    }
+
+    .page-2 img {
+        width: 319px;
+        object-position: center;
+    }
+
+    /* End Bagian Header */
+
+    /* Bagian Layanan */
+    article .judul-artikel {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 2.5em;
+    }
+
+    section.container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    section .thumbnail img {
+        width: 250px;
+        height: auto;
+    }
+
+    section .thumbnail {
+        text-align: center;
+        padding: 0.5em;
+        margin: auto;
+        flex: 1;
+    }
+
+    section .deskripsi {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    section .deskripsi h4 {
+        flex: 1;
+        font-size: 1.25rem;
+        color: rgba(0, 0, 0, .7);
+        margin-bottom: 0.5em;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    section .deskripsi ol {
+        flex: 2;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 0.80rem;
+        margin-bottom: 0.5em;
+    }
+
+    /* End Bagian Layanan */
+
+    /* Bagian Galeri */
+    .galeri-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .lightbox {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 9999;
+        transition: .3s;
+        opacity: 0;
+    }
+
+    .lightbox:target {
+        position: fixed;
+        display: block;
+        z-index: 9999;
+        padding-bottom: 100px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        opacity: 1;
+    }
+
+    .img-galeri {
+        width: 250px;
+    }
+
+    .btn-galeri {
+
+        padding: 3px;
+        color: rgba(0, 0, 0.8);
+        background-color: rgba(237, 238, 247, .8);
+        padding: 0.5em;
+        font-size: 0.75rem;
+        margin-left: 10px;
+        position: fixed;
+        right: 45%;
+        bottom: 35%;
+        cursor: pointer;
+    }
+
+    .btn-galeri:hover {
+        background-color: #EDEEF7;
+        color: #000;
+        transform: scale(1.05);
+    }
+
+    .next:hover,
+    .prev:hover {
+        transform: scale(1.05);
+    }
+
+    .lightbox.flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .next img,
+    .prev img {
+        width: 40px;
+    }
+
+    /* End Bagian Galeri */
+
+    /* Bagian Kontak */
+    .container.kontak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    /* End Bagian Kontak */
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+
+    /* Bagian Header */
+    nav ul li {
+        font-size: 0.75rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .page {
+        flex-direction: row;
+        margin: 1em 1em 0 0;
+    }
+
+    .page-1 {
+        order: 0;
+        padding: 1em;
+    }
+
+    .page-1 h1 {
+        font-size: 2rem;
+        margin: 0.25em 0;
+    }
+
+    .page-1 p {
+        font-size: 1rem;
+        margin: 0 0 1.5em 0;
+    }
+
+    .page-2 img {
+        width: 411.51px;
+    }
+
+    /* End Bagian Header */
+
+    /* Bagian Layanan */
+    article .judul-artikel {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 2.5em;
+        font-size: 1.5rem;
+    }
+
+
+    section.container-flex {
+        display: flex;
+        padding: 1em;
+    }
+
+    section .thumbnail img {
+        width: 280px;
+        height: auto;
+    }
+
+    section .thumbnail {
+        text-align: center;
+        padding: 1em;
+        margin-right: auto;
+        flex: 1;
+    }
+
+    section .deskripsi {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        padding: 1em;
+        flex: 2;
+    }
+
+    section .deskripsi h4 {
+        flex: 1;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, .7);
+        margin-bottom: 0.5em;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    section .deskripsi ol {
+        flex: 2;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 1rem;
+        margin-bottom: 0.5em;
+    }
+
+    .thumbnail.order-2 {
+        order: 1;
+    }
+
+    .deskripsi.order-1 {
+        padding: 1em 1em 1em 2em;
+    }
+
+    /* End Bagian Layanan */
+
+    /* Bagian Lightbox */
+    .lightbox.flex {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+
+    .btn-galeri {
+
+        padding: 3px;
+        color: rgba(0, 0, 0.8);
+        background-color: rgba(237, 238, 247, .8);
+        padding: 0.5em;
+        font-size: 0.75rem;
+        margin-left: 10px;
+        position: fixed;
+        right: 45%;
+        cursor: pointer;
+    }
+
+    .next {
+        position: absolute;
+        bottom: 70%;
+        right: 9%;
+    }
+
+    .prev {
+        position: absolute;
+        bottom: 70%;
+        left: 9%;
+    }
+
+    /* End bagian lightbox */
+
+    /* Bagian Kontak */
+    .container.kontak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    /* End Bagian Kontak */
+
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+    /* Bagian Header */
+
+    nav ul li {
+        font-size: 1rem;
+    }
+
+    .page {
+        align-items: center;
+    }
+
+    .page-1 h1 {
+        font-size: 2rem;
+        margin: 0.25em 0;
+    }
+
+    .page-1 p {
+        font-size: 1.25rem;
+        margin: 0 0 1.5em 0;
+    }
+
+    .page-2 img {
+        width: 450px;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    /* End Bagian Header */
+
+    /* Bagian Layanan */
+    article .judul-artikel {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 2.5em;
+    }
+
+    section.container-flex {
+        display: flex;
+        padding: 1em;
+    }
+
+    section .thumbnail img {
+        width: 320px;
+        height: auto;
+    }
+
+    section .thumbnail {
+        text-align: center;
+        padding: 1em;
+        margin-left: 5.5em;
+        margin-right: -5.5em;
+        flex: 1;
+    }
+
+    section .deskripsi {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 4em;
+        padding: 1em;
+        align-items: center;
+        flex: 2;
+    }
+
+    article#layanan section:nth-child(2) .thumbnail {
+        /* background: #000; */
+        margin-left: -5em;
+        /* margin-left: 5em; */
+    }
+
+    article#layanan section:nth-child(2) .deskripsi {
+        /* background: #000; */
+        margin-left: 6.5em;
+        /* margin-left: 5em; */
+    }
+
+    section .deskripsi h4 {
+        flex: 1;
+        font-size: 1.75rem;
+        color: rgba(0, 0, 0, .7);
+        margin-bottom: 0.5em;
+        text-align: center;
+        padding: 0.5em 1em 0.5em 0.5em;
+    }
+
+    section .deskripsi ol {
+        flex: 2;
+        color: rgba(0, 0, 0, 0.6);
+        padding: 1em;
+        font-size: 1.25rem;
+        margin-bottom: 0.5em;
+    }
+
+    .thumbnail.order-2 {
+        order: 1;
+    }
+
+    .deskripsi.order-1 {
+        padding: 1em;
+    }
+
+    .deskripsi.order-1 h4 {
+        margin-left: 4em;
+    }
+
+    .deskripsi.order-1 ol {
+        margin-left: 2em;
+    }
+
+    article .judul-artikel {
+        margin-bottom: 5.5em;
+    }
+
+
+    /* Bagian Lightbox */
+
+    .btn-galeri {
+        position: absolute;
+        padding: 3px;
+        color: rgba(0, 0, 0.8);
+        background-color: rgba(237, 238, 247, .8);
+        padding: 0.5em;
+        font-size: 1rem;
+        margin-left: 10px;
+        right: 47%;
+        bottom: 570px;
+        cursor: pointer;
+    }
+
+    .btn-galeri:hover {
+        background-color: #EDEEF7;
+        color: #000;
+        transform: scale(1.05);
+    }
+
+    .next:hover,
+    .prev:hover {
+        transform: scale(1.05);
+    }
+
+    .next,
+    .prev {
+        position: static;
+    }
+
+    .lightbox.flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container.kontak {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
